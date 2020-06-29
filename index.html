@@ -7,10 +7,29 @@
     <title>Document</title>
 </head>
 <body>
+  <a href="#/cart">cart</a>
+  <a href="#/courses">Courses</a>
+    <div>
+        <h2>add Course</h2>
+        <input type="text" placeholder="Course Name" id="courseName">
+        <input type="text" placeholder="Course Price" id="coursePrice">
+        <input type="text" placeholder="Course Logo" id="courseLogo">
+        <input type="text" placeholder="Course Description" id="courseDescription">
+        <input type="text" placeholder="Course Duration" id="courseDuration">
+
+        <button id="addCourse">Add Course</button>
+    </div>
+
+
+    <div id="courseList">
+
+    </div>
+
     <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
     
   <script>
+
     var firebaseConfig = {
       apiKey: "AIzaSyBgyqf4KhBgvckAbg8BgFthRUBWlMI9H-o",
       authDomain: "myfirstproject-8d9d2.firebaseapp.com",
